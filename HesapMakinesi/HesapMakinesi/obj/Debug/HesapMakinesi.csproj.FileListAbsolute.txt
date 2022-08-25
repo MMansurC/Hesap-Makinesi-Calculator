@@ -1,0 +1,11 @@
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\bin\Debug\Poligon4.exe.config
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\bin\Debug\Poligon4.exe
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\bin\Debug\Poligon4.pdb
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Debug\HesapMakinesi.csproj.AssemblyReference.cache
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Debug\HesapMakinesi.csproj.SuggestedBindingRedirects.cache
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Debug\HesapMakinesi.Form1.resources
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Debug\Poligon4.Properties.Resources.resources
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Debug\HesapMakinesi.csproj.GenerateResource.cache
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Debug\HesapMakinesi.csproj.CoreCompileInputs.cache
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Debug\Poligon4.exe
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Debug\Poligon4.pdb

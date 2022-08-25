@@ -1,0 +1,11 @@
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\bin\Release\Poligon4.exe.config
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\bin\Release\Poligon4.exe
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\bin\Release\Poligon4.pdb
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Release\HesapMakinesi.csproj.AssemblyReference.cache
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Release\HesapMakinesi.csproj.SuggestedBindingRedirects.cache
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Release\HesapMakinesi.Form1.resources
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Release\Poligon4.Properties.Resources.resources
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Release\HesapMakinesi.csproj.GenerateResource.cache
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Release\HesapMakinesi.csproj.CoreCompileInputs.cache
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Release\Poligon4.exe
+C:\Users\murat.cikintoglu\source\repos\Poligon4\Poligon4\obj\Release\Poligon4.pdb
