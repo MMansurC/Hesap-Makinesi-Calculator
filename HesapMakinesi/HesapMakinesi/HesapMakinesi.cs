@@ -41,6 +41,15 @@ namespace HesapMakinesi
         }
         // ÇALINTI
 
+        void divideByZero()
+        {
+            try
+            {
+                System.Diagnostics.Process.Start("https://i.redd.it/xfbb0xdbekg31.jpg");
+            }
+            catch { }
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Size = new Size(400, 550);
@@ -653,7 +662,9 @@ namespace HesapMakinesi
                 {
                     if (islem2 == 0)
                     {
-                        islemLabel.Text = "Buralar yanar...";
+                        //islemLabel.Text = "Buralar yanar...";
+                        divideByZero();
+                        islemLabel.Text = "";
                     }
                     else
                     {
@@ -665,7 +676,7 @@ namespace HesapMakinesi
                     MessageBox.Show("nE?");
                     return;
                 }
-                if (islemLabel.Text == "Buralar yanar...")
+                /*if (islemLabel.Text == "Buralar yanar...")
                 {
                     selectedIslem = islemyapildi = false;
                     islem1 = islem2 = 0;
@@ -678,7 +689,7 @@ namespace HesapMakinesi
                     operate = '\0';
                     islemyapildi = true;
                 }
-                else if (islemLabel.Text.Length > 19)
+                else */if (islemLabel.Text.Length > 19)
                 {
                     islemLabel.Text = "Eee noldu şimdi?";
                     for (int i = 0; i < simdiki.Length; i++)
@@ -690,9 +701,12 @@ namespace HesapMakinesi
                 }
                 else
                 {
-                    islem1 = double.Parse(islemLabel.Text);
-                    islemyapildi = true;
-                    virgulburada1 = virgulburada2 = -1;
+                    if (islemLabel.Text.Length > 0)
+                    {
+                        islem1 = double.Parse(islemLabel.Text);
+                        islemyapildi = true;
+                        virgulburada1 = virgulburada2 = -1;
+                    }
                 }
             }
             catch (Exception e)
