@@ -50,6 +50,7 @@ namespace HesapMakinesi
             catch { }
         }
 
+        TextBox Girdi = new TextBox();
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Size = new Size(400, 550);
@@ -109,11 +110,18 @@ namespace HesapMakinesi
             anaPanel.Location = new Point(6, 36);
             anaPanel.BorderStyle = BorderStyle.FixedSingle;
 
+            this.Controls.Add(Girdi);
+            Girdi.Multiline = true;
+            Girdi.KeyDown += new KeyEventHandler(Girdi_KeyDown);
+            Girdi.KeyPress += new KeyPressEventHandler(Girdi_KeyPress);
+            
+
             int sayac = 0, x = -80, y = 106, yek = 0;
             string[] dizi = { "×", "÷", "DEL", "CLR", "7", "8", "9", "+", "4", "5", "6", "-", "1", "2", "3", "=", "+/-", "0", "," };
             for (int i = 0; i < 19; i++)
             {
                 buton = new Button();
+                buton.TabStop = false;
                 anaPanel.Controls.Add(buton);
                 buton.FlatStyle = FlatStyle.Popup;
                 buton.Name = "buton" + (sayac + 1);
@@ -211,6 +219,7 @@ namespace HesapMakinesi
             mainText.TextAlign = ContentAlignment.MiddleCenter;
             mainText.MouseDown += new MouseEventHandler(UstBorder_MouseDown);
             mainText.Text = "Hesap Makinesi";
+            Girdi.Focus();
         }
 
         int virgulburada1 = -1, virgulburada2 = -1;
@@ -304,7 +313,7 @@ namespace HesapMakinesi
                     }
                 }
             };
-            Girdi.ResetText();
+            Girdi.Text="";
         }
 
         private void Girdi_KeyDown(object sender, KeyEventArgs e)
@@ -662,9 +671,9 @@ namespace HesapMakinesi
                 {
                     if (islem2 == 0)
                     {
-                        //islemLabel.Text = "Buralar yanar...";
                         divideByZero();
                         islemLabel.Text = "";
+                        islemyapildi = true;
                     }
                     else
                     {
@@ -676,20 +685,7 @@ namespace HesapMakinesi
                     MessageBox.Show("nE?");
                     return;
                 }
-                /*if (islemLabel.Text == "Buralar yanar...")
-                {
-                    selectedIslem = islemyapildi = false;
-                    islem1 = islem2 = 0;
-                    virgulburada1 = virgulburada2 = -1;
-                    for (int i = 0; i < simdiki.Length; i++)
-                    {
-                        simdiki[i] = '\0';
-                    }
-                    takipsayisi = 0;
-                    operate = '\0';
-                    islemyapildi = true;
-                }
-                else */if (islemLabel.Text.Length > 19)
+                if (islemLabel.Text.Length > 19)
                 {
                     islemLabel.Text = "Eee noldu şimdi?";
                     for (int i = 0; i < simdiki.Length; i++)
